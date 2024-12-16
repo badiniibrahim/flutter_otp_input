@@ -3,7 +3,7 @@ description: "The OTPInput widget is a customizable Flutter widget that allows u
 homepage: https://github.com/badiniibrahim/flutter_otp_input
 repository: https://github.com/badiniibrahim/flutter_otp_input
 
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.5.3

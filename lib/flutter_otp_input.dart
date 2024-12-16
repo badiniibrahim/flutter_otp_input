@@ -35,27 +35,70 @@ import 'package:flutter/material.dart';
 /// );
 /// ```
 class OTPInput extends StatefulWidget {
+  /// The number of OTP input fields.
   final int length;
+
+  /// Callback that is called when the OTP input is completed.
   final ValueChanged<String> onCompleted;
+
+  /// Callback that is called when the OTP value changes.
   final ValueChanged<String>? onChanged;
+
+  /// The border color of the OTP input fields.
   final Color borderColor;
-  final Color borderFieldColor; // Color of the input field borders
+
+  /// The color of the OTP field's border when not focused.
+  final Color borderFieldColor;
+
+  /// The background color of the OTP input fields.
   final Color backgroundColor;
+
+  /// The width of each OTP input field.
   final double fieldWidth;
+
+  /// The border radius for each OTP input field.
   final double borderRadius;
+
+  /// The text style for the OTP input fields.
   final TextStyle textStyle;
+
+  /// The main title text above the OTP input fields.
   final String title;
+
+  /// The subtitle text below the title, describing the OTP input process.
   final String subtitle;
+
+  /// The message shown before the resend text.
   final String resendMessage;
+
+  /// The style of the title text.
   final TextStyle titleStyle;
+
+  /// The style of the subtitle text.
   final TextStyle subtitleStyle;
+
+  /// The style of the resend text.
   final TextStyle resendStyle;
-  final TextStyle resendTextStyle; // Custom style for the resend text
+
+  /// The custom style for the resend text link.
+  final TextStyle resendTextStyle;
+
+  /// The phone number associated with OTP verification.
   final String phoneNumber;
+
+  /// The text displayed on the verify button.
   final String verifyText;
+
+  /// The text displayed for the resend button.
   final String resendText;
+
+  /// The background color for the verify button.
   final Color verifyButtonColor;
+
+  /// The error message shown when OTP input is invalid.
   final String errorMessage;
+
+  /// A callback function triggered when the resend option is tapped.
   final VoidCallback? onResend;
 
   const OTPInput({
@@ -64,8 +107,7 @@ class OTPInput extends StatefulWidget {
     required this.onCompleted,
     this.onChanged,
     this.borderColor = const Color(0xFFE5A048),
-    this.borderFieldColor =
-        const Color(0xFF000000), // Border color for the input fields
+    this.borderFieldColor = const Color(0xFF000000),
     this.backgroundColor = Colors.white,
     this.fieldWidth = 50,
     this.borderRadius = 12.0,
@@ -84,9 +126,7 @@ class OTPInput extends StatefulWidget {
     this.resendStyle = const TextStyle(
         fontSize: 14, color: Colors.orange, fontWeight: FontWeight.bold),
     this.resendTextStyle = const TextStyle(
-        fontSize: 16,
-        color: Colors.blue,
-        fontWeight: FontWeight.bold), // Style for the resend text
+        fontSize: 16, color: Colors.blue, fontWeight: FontWeight.bold),
     this.errorMessage = "Please fill in all fields.",
     this.onResend,
   });
@@ -192,8 +232,7 @@ class _OTPInputState extends State<OTPInput> {
                 color: widget.backgroundColor,
                 borderRadius: BorderRadius.circular(widget.borderRadius),
                 border: Border.all(
-                  color: widget
-                      .borderFieldColor, // Border color for each input field
+                  color: widget.borderFieldColor,
                   width: 2,
                 ),
                 boxShadow: [
@@ -241,8 +280,7 @@ class _OTPInputState extends State<OTPInput> {
           child: ElevatedButton(
             onPressed: _verifyCode,
             style: ElevatedButton.styleFrom(
-              backgroundColor: widget
-                  .verifyButtonColor, // Background color of the verify button
+              backgroundColor: widget.verifyButtonColor,
               minimumSize: const Size(200, 50),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12.0),
@@ -268,8 +306,7 @@ class _OTPInputState extends State<OTPInput> {
               children: [
                 TextSpan(
                   text: widget.resendText,
-                  style: widget
-                      .resendTextStyle, // Apply the special style for resend text
+                  style: widget.resendTextStyle,
                 ),
               ],
             ),
