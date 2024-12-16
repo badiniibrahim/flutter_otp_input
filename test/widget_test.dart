@@ -50,8 +50,6 @@ void main() {
 
     testWidgets('Error message should appear when OTP is incomplete',
         (WidgetTester tester) async {
-      String errorMessage = '';
-
       await tester.pumpWidget(createOTPInputWidget(
         onCompleted: (value) {},
       ));
