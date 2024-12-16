@@ -237,7 +237,7 @@ class _OTPInputState extends State<OTPInput> {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black.withAlpha(1),
                     blurRadius: 5.0,
                     spreadRadius: 1.0,
                   ),
