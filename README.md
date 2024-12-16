@@ -114,64 +114,64 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### Parameters
 
-- \*\*`length`\*\*: (optional)
+- **`length`**: (optional)
   The number of fields in the OTP input. Default value is 6. This determines how many OTP digits the user is required to enter.
 
-- \*\*`onCompleted`\*\*: (required)
+- **`onCompleted`** (required)
   A callback function that is called when the OTP input is completed (when all fields are filled). It returns the complete OTP entered by the user.
 
-- \*\*`onChanged`\*\*: (optional)
+- **`onChanged`**: (optional)
   A callback function that is called whenever the value of the OTP changes. It provides the current input as a string of digits entered so far.
 
-- \*\*`borderColor`\*\*: (optional)
+- **`borderColor`**: (optional)
   The color of the border surrounding the OTP input fields. Default value is Color(0xFFE5A048).
 
-- \*\*`borderFieldColor`\*\*: (optional)
+- **`borderFieldColor`**: (optional)
   The color of the individual field borders for each OTP input box. Default value is Color(0xFF000000).
 
-- \*\*`backgroundColor`\*\*: (optional)
+- **`backgroundColor`**: (optional)
   The background color of the OTP input fields. Default value is Colors.white.
 
-- \*\*`fieldWidth`\*\*: (optional)
+- **`fieldWidth`**: (optional)
   The width and height of each OTP input field. Default value is 50.
 
-- \*\*`borderRadius`\*\*: (optional)
+- **`borderRadius`**: (optional)
   The border radius of the OTP input fields, controlling how rounded the corners are. Default value is 12.0.
 
-- \*\*`textStyle`\*\*: (optional)
+- **`textStyle`**: (optional)
   A TextStyle object to customize the font style of the OTP digits. Default style is fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black.
 
-- \*\*`title`\*\*: (optional)
+- **`title`**: (optional)
   The title text displayed at the top of the OTP screen. Default is "OTP Verification".
 
-- \*\*`subtitle`\*\*: (optional)
+- **`subtitle`**: (optional)
   The subtitle text displayed below the title, providing additional instructions. Default is "Enter the verification code we just sent to your number".
 
-- \*\*`resendMessage`\*\*: (optional)
+- **`resendMessage`**: (optional)
   The message displayed above the "Resend" link, typically saying something like "Didn’t receive the code?". Default is "Didn’t receive code?".
 
-- \*\*`titleStyle`\*\*: (optional)
+- **`titleStyle`**: (optional)
   A TextStyle object to customize the font style of the title text. Default value is fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black.
 
-- \*\*`subtitleStyle`\*\*: (optional)
+- **`subtitleStyle`**: (optional)
   A TextStyle object to customize the font style of the subtitle text. Default value is fontSize: 16, color: Colors.grey.
 
-- \*\*`resendStyle`\*\*: (optional)
+- **`resendStyle`**: (optional)
   A TextStyle object to customize the font style of the "Resend" link text. Default value is fontSize: 14, color: Colors.orange, fontWeight: FontWeight.bold.
 
-- \*\*`verifyText`\*\*: (optional)
+- **`verifyText`**: (optional)
   The text displayed on the verification button. Default value is "Verify".
 
-- \*\*`resendText`\*\*: (optional)
+- **`resendText`**: (optional)
   The text displayed for the "Resend" action. Default value is "Resend".
 
-- \*\*`verifyButtonColor`\*\*: (optional)
+- **`verifyButtonColor`**: (optional)
   The background color of the verify button. Default value is Color(0xFFE5A048).
 
-- \*\*`errorMessage`\*\*: (optional)
+- **`errorMessage`**: (optional)
   The error message to display if the user does not fill all the fields correctly. Default value is "Please fill in all fields."
 
-- \*\*`onResend`\*\*: (optional)
+- **`onResend`**: (optional)
   A callback function that is called when the user taps on the "Resend" link. It can be used to trigger an action, such as resending the OTP.
 
 ## LinkedIn
