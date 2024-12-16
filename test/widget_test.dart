@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_otp_input/main.dart';
+import 'package:flutter_otp_input/flutter_otp_input.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Widget createOTPInputWidget({
